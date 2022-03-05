@@ -142,17 +142,14 @@ void winState() {
   AIOnOff();
 }
 
-int temp  = 0;
 void AIOnOff() {
-  if( temp % 2  == 0){
+  if(keyPressed & key == 'a' || key == 'A'){
     auto = true;
-  }else {
+  }
+  
+  if(keyPressed & key == 'm' || key == 'M'){
     auto = false;
   }
-  
-  if(keyPressed & key == 'a' ){  
-  }
-  
 }
 
 
